@@ -360,7 +360,7 @@ abstract: A high level overview of the process for developing and deploying a NI
 
 ## Impact on NIEM 5.0
 
-      - This NIEM tool development will not affect NIEM 5.0 release schedule or artifacts released as part of the NIEM 5.0 release
+   This NIEM tool development will not affect NIEM 5.0 release schedule or artifacts released as part of the NIEM 5.0 release
 
 # Functions
 
@@ -384,28 +384,31 @@ abstract: A high level overview of the process for developing and deploying a NI
 
 ## Data model development
 
-      - Creation of NIEM-conformant data models.
-         - For example, the creation of extension schemas and message envelopes.
+   Creation of NIEM-conformant data models.
+   For example, the creation of extension schemas and message envelopes.
 
 ## Artifact production
 
-      - Formats:
-         - Zip file
-         - XML Schema document set
-         - JSON Schema + JSON-LD context
-         - OpenAPI
-         - Spreadsheet
-         - UML XMI
-         - Clicky diagrams
-         - Documentation
-            - e.g., Word doc
-         - Database schema
-         - IDL
-         - Google Protocol Buffers
-         - Apache Thrift
+   Formats:
+
+      - Zip file
+      - XML Schema document set
+      - JSON Schema + JSON-LD context
+      - OpenAPI
+      - Spreadsheet
+      - UML XMI
+      - Clicky diagrams
+      - Documentation
+         - e.g., Word doc
+      - Database schema
+      - IDL
+      - Google Protocol Buffers
+      - Apache Thrift
 
 ## Artifact import
 
+   This has an overlap with data model development.
+   Data models could be built from artifacts imported into a tool, such as a spreadsheet or extension schema.
 
 ## Validation
 

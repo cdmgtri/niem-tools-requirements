@@ -38,9 +38,6 @@
     <xsl:apply-templates select="node"/>
   </xsl:template>
 
-  <xsl:function name="f:node-is-visible" as="xs:boolean">
-  </xsl:function>
-
   <xsl:template match="node[empty(@STYLE_REF)]"
                 priority="-1">
     <xsl:for-each select="1 to (count(ancestor-or-self::node[empty(@STYLE_REF)]) - 1)">
@@ -53,6 +50,24 @@
     </xsl:choose>
     <xsl:value-of select="@TEXT"/>
     <xsl:text>&#10;</xsl:text>
+    <xsl:apply-templates select="node"/>
+  </xsl:template>
+
+  <xsl:template match="node[@STYLE_REF = 'text']"
+                priority="-1">
+    <xsl:for-each select="1 to (count(ancestor-or-self::node[empty(@STYLE_REF)]) - 1)">
+      <xsl:text>   </xsl:text>
+    </xsl:for-each>
+    <xsl:value-of select="@TEXT"/>
+    <xsl:text>&#10;</xsl:text>
+    <xsl:choose>
+      <xsl:when test="exists(descendant::node[1][empty(@STYLE_REF)])">
+        <xsl:text>&#10;</xsl:text>
+      </xsl:when>
+      <xsl:when test="exists(following::node[1][empty(@STYLE_REF)])">
+        <xsl:text>&#10;</xsl:text>
+      </xsl:when>
+    </xsl:choose>
     <xsl:apply-templates select="node"/>
   </xsl:template>
 

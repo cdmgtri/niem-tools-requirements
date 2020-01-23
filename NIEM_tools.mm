@@ -469,7 +469,7 @@
 <node TEXT="Management support &amp; oversight" ID="ID_996862633" CREATED="1579791495497" MODIFIED="1579791501483"/>
 </node>
 <node TEXT="Impact on NIEM 5.0" STYLE_REF="heading" ID="ID_798501049" CREATED="1579797067848" MODIFIED="1579797079476">
-<node TEXT="This NIEM tool development will not affect NIEM 5.0 release schedule or artifacts released as part of the NIEM 5.0 release" ID="ID_637914833" CREATED="1579797023057" MODIFIED="1579797060138"/>
+<node TEXT="This NIEM tool development will not affect NIEM 5.0 release schedule or artifacts released as part of the NIEM 5.0 release" STYLE_REF="text" ID="ID_637914833" CREATED="1579797023057" MODIFIED="1579803769705"/>
 </node>
 </node>
 <node TEXT="Functions" STYLE_REF="heading" ID="ID_368991956" CREATED="1579796010992" MODIFIED="1579796058631">
@@ -491,12 +491,12 @@
 <node TEXT="right now we tell people to use a spreadsheet" ID="ID_458137337" CREATED="1579721097895" MODIFIED="1579721108818"/>
 </node>
 <node TEXT="Data model development" STYLE_REF="heading" ID="ID_154916093" CREATED="1579797199207" MODIFIED="1579797265578">
-<node TEXT="Creation of NIEM-conformant data models." ID="ID_130983623" CREATED="1579797210694" MODIFIED="1579797232592">
-<node TEXT="For example, the creation of extension schemas and message envelopes." ID="ID_1176119359" CREATED="1579797233069" MODIFIED="1579797256808"/>
+<node TEXT="Creation of NIEM-conformant data models." STYLE_REF="text" ID="ID_130983623" CREATED="1579797210694" MODIFIED="1579803791927">
+<node TEXT="For example, the creation of extension schemas and message envelopes." STYLE_REF="text" ID="ID_1176119359" CREATED="1579797233069" MODIFIED="1579803791927"/>
 </node>
 </node>
 <node TEXT="Artifact production" STYLE_REF="heading" ID="ID_1252584094" CREATED="1579617758184" MODIFIED="1579796980232">
-<node TEXT="Formats:" ID="ID_1543206981" CREATED="1579796436062" MODIFIED="1579797125692">
+<node TEXT="Formats:" STYLE_REF="text" ID="ID_1543206981" CREATED="1579796436062" MODIFIED="1579803811745">
 <node TEXT="Zip file" ID="ID_897076906" CREATED="1579705622734" MODIFIED="1579705628438"/>
 <node TEXT="XML Schema document set" ID="ID_1231894327" CREATED="1579705628622" MODIFIED="1579705633791"/>
 <node TEXT="JSON Schema + JSON-LD context" ID="ID_188607445" CREATED="1579705634238" MODIFIED="1579705643215"/>
