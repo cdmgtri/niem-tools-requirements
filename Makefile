@@ -14,9 +14,10 @@ generated/%.pptx: tmp/%.pptx.md
 	  --to=pptx --output=$@ \
 	  --from=markdown+yaml_metadata_block $<
 
-generated/%.docx: tmp/%.md
+generated/%.docx: tmp/%.md reference.docx
 	pandoc \
 	  --to=docx --output=$@ \
+	  --reference-doc=reference.docx \
 	  --from=markdown+yaml_metadata_block $<
 
 generated/%.md: tmp/%.md

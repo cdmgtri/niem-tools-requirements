@@ -38,6 +38,9 @@
     <xsl:apply-templates select="node"/>
   </xsl:template>
 
+  <xsl:function name="f:node-is-visible" as="xs:boolean">
+  </xsl:function>
+
   <xsl:template match="node[empty(@STYLE_REF)]"
                 priority="-1">
     <xsl:for-each select="1 to (count(ancestor-or-self::node[empty(@STYLE_REF)]) - 1)">

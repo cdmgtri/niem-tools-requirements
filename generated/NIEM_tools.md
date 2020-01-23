@@ -357,6 +357,95 @@ abstract: A high level overview of the process for developing and deploying a NI
 
       - 1 developer full time
       - Management support & oversight
+
+## Impact on NIEM 5.0
+
+      - This NIEM tool development will not affect NIEM 5.0 release schedule or artifacts released as part of the NIEM 5.0 release
+
+# Functions
+
+
+## Search & browse
+
+      - additional search targets
+         - NIEM release repository
+         - EIEM
+         - local folder
+         - git repository
+         - IEPD
+      - Search for NIEM components
+
+## Mapping
+
+      - going from local data requirements to niem content
+         - subset
+         - extension
+      - right now we tell people to use a spreadsheet
+
+## Data model development
+
+      - Creation of NIEM-conformant data models.
+         - For example, the creation of extension schemas and message envelopes.
+
+## Artifact production
+
+      - Formats:
+         - Zip file
+         - XML Schema document set
+         - JSON Schema + JSON-LD context
+         - OpenAPI
+         - Spreadsheet
+         - UML XMI
+         - Clicky diagrams
+         - Documentation
+            - e.g., Word doc
+         - Database schema
+         - IDL
+         - Google Protocol Buffers
+         - Apache Thrift
+
+## Artifact import
+
+
+## Validation
+
+      - sample instance
+      - iepd conformance
+
+## IEPD repository
+
+      - search / fetch
+      - publish / push
+
+## User management
+
+      - publication
+      - collaboration
+      - credentials
+      - privileges
+      - groups
+      - session management
+         - pause & resume
+         - delayed login
+            - let people get started before they have to create an account
+            - roll over in-progress content to the new account
+
+## Help & guidance
+
+      - online / tool documentation
+      - human intervention & support
+         - helpdesk
+      - tutorial mode
+
+# User interfaces
+
+      - map & model grid interface
+      - data model search interface
+      - conformant instance / message validation against an iepd
+      - iepd files / folder interface
+      - iepd metadata / manifest entry forms
+      - niem version migration
+      - start page / landing page
    - NIEM Tools Roadmap
 
 # Phase 1: A Files Interface for NIEM Message Descriptions
