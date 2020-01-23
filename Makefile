@@ -1,26 +1,30 @@
 
 .SECONDARY: 
 
-all_files = NIEM_tools.docx NIEM_tools.pptx
-junk_files = NIEM_tools.md
+all_files = generated/NIEM_tools.docx generated/NIEM_tools.pptx
 
 .PHONY: all
 all: ${all_files}
 
-%.pptx: %.md
+generated/%.pptx: generated/%.pptx.md
 	pandoc \
 	  --to=pptx --output=$@ \
 	  --from=markdown+yaml_metadata_block $<
 
-%.docx: %.md
+generated/%.docx: generated/%.docx.md
 	pandoc \
 	  --to=docx --output=$@ \
 	  --from=markdown+yaml_metadata_block $<
 
-%.md: %.mm mm-to-md.xsl
-	saxon --in=$< --out=$@ --xsl=mm-to-md.xsl
+generated/%.pptx.md: %.mm mm-to-md-for-pptx.xsl
+	mkdir -p ${dir $@}
+	saxon --in=$< --out=$@ --xsl=mm-to-md-for-pptx.xsl
+
+generated/%.docx.md: %.mm mm-to-md-for-docx.xsl
+	mkdir -p ${dir $@}
+	saxon --in=$< --out=$@ --xsl=mm-to-md-for-docx.xsl
 
 .PHONY: clean
 clean:
-	${RM} ${all_files} ${junk_files}
-
+	${RM} ${all_files}
+	${RM} -r clean

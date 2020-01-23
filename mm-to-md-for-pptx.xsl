@@ -27,11 +27,7 @@
   </xsl:template>
 
   <xsl:template match="node[@STYLE_REF = 'heading']">
-    <xsl:text>&#10;</xsl:text>
-    <xsl:for-each select="1 to (count(ancestor-or-self::node[@STYLE_REF = 'heading']))">
-      <xsl:text>#</xsl:text>
-    </xsl:for-each>
-    <xsl:text> </xsl:text>
+    <xsl:text>&#10;# </xsl:text>
     <xsl:value-of select="@TEXT"/>
     <xsl:text>&#10;</xsl:text>
     <xsl:text>&#10;</xsl:text>
