@@ -1,6 +1,12 @@
 ---
 title: NIEM tools
 date: Jan 23 2020
+date: Jan 23, 2020
+author: NIEM Management Office
+abstract: A description of requirements for a NIEM tool suite.
+date: Jan 23, 2020
+author: NIEM Management Office
+abstract: A high level overview of the process for developing and deploying a NIEM tool suite.
 ---
    - author: NIEM Management Office
    - notes
@@ -95,6 +101,8 @@ date: Jan 23 2020
       - agile development
       - regular deployment
       - customer participation
+      - Roll-out
+         - Offline other tools
 
 # architecture
 
@@ -335,12 +343,28 @@ date: Jan 23 2020
             - Jim thinks openAPI is our best target
             - likely that json schema won't get much use
             - service description part of an openapi is outside the "schema" part
-   - roadmap
    - NIEM Tools Requirements
-      - Assumptions
-         - Timeline
-            - 1-year first phase
-            - 5 year roadmap
-         - Level of effort
-            - 1 developer full time
-            - Management support & oversight
+
+# Assumptions
+
+
+## Timeline
+
+      - 1-year first phase
+      - 5 year roadmap
+
+## Level of effort
+
+      - 1 developer full time
+      - Management support & oversight
+   - NIEM Tools Roadmap
+
+# Phase 1: A Files Interface for NIEM Message Descriptions
+
+      - Duration: 1 year
+
+# Phase 2
+
+
+# Phase 3
+

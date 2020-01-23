@@ -7,7 +7,7 @@
 
   <xsl:output method="text" encoding="UTF-8"/>
 
-  <xsl:template match="/map/node" priority="1">
+  <xsl:template match="node[empty(ancestor::node)]" priority="1">
     <xsl:text>---&#10;</xsl:text>
     <xsl:text>title: </xsl:text>
     <xsl:value-of select="@TEXT"/>
